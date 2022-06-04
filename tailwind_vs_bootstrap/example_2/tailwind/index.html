@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tailwind Accordion</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="accordionExample">
+        <div class="border border-gray-200">
+            <h2 class="mb-0" id="headingOne">
+                <button class="
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base
+              text-gray-800
+              text-left
+              bg-teal-400
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="py-4 px-5">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                    until the collapse plugin adds the appropriate classes that we use to style each
+                    element.
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-gray-200">
+            <h2 class="mb-0" id="headingTwo">
+                <button class="
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base 
+              text-gray-800 
+              text-left
+              bg-teal-400
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="hidden" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class=" py-4 px-5">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                    until the collapse plugin adds the appropriate classes that we use to style each
+                    element.
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-gray-200">
+            <h2 class="mb-0" id="headingThree">
+                <button class="
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+              text-base 
+              text-gray-800 
+              text-left
+              bg-teal-400
+              border-0
+              rounded-none
+              transition
+              focus:outline-none
+            " type="button">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="hidden">
+                <div class="py-4 px-5">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                    until the collapse plugin adds the appropriate classes that we use to style each
+                    element.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const expand1 = document.querySelector('#headingOne');
+        const expander1 = document.querySelector('#collapseOne');
+        const expand2 = document.querySelector('#headingTwo');
+        const expander2 = document.querySelector('#collapseTwo');
+        const expand3 = document.querySelector('#headingThree');
+        const expander3 = document.querySelector('#collapseThree');
+
+        expand1.addEventListener('click', (e) => {
+            expander1.classList.toggle('hidden');
+        });
+        expand2.addEventListener('click', (e) => {
+            expander2.classList.toggle('hidden');
+        });
+        expand3.addEventListener('click', (e) => {
+            expander3.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
