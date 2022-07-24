@@ -1,0 +1,65 @@
+.base {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.static {
+    position: static;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    top: 10px;
+    left: 10px;
+}
+
+.relative {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.fixed {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.absolute {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.absolute-off-page {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    top: 20px;
+    right: -10px;
+    color: white;
+}
+
+.sticky {
+    position: sticky;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    top: 10px;
+    left: 10px;
+}
+
+
