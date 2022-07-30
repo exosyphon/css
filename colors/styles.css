@@ -1,0 +1,98 @@
+/* 
+#RRGGBB, where the RR (red), GG (green) and BB (blue) 
+hexadecimal integers specify the components of the color. 
+All values must be between 00 and FF.
+*/
+.hexadecimal_red {
+  height: 100px;
+  width: 100px;
+  background-color: #ff0000;
+}
+.hexadecimal_blue {
+  height: 100px;
+  width: 100px;
+  background-color: #0000ff;
+}
+
+/* 
+Each parameter (red, green, and blue) defines the intensity of
+the color and can be an integer between 0 and 255 or a
+percentage value (from 0% to 100%).
+*/
+.rgb_green {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 255, 0);
+  /* background-color: rgba(0, 255, 0, 0.3); */
+}
+.rgb_blue {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 0, 100%);
+}
+
+/* 
+Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) 
+is red, 120 is green, 240 is blue. Saturation is a
+percentage value; 0% means a shade of gray and 100% is the full color.
+Lightness is also a percentage; 0% is black, 100% is white.
+*/
+.hsl_green {
+  height: 100px;
+  width: 100px;
+  background-color: hsl(120, 100%, 50%);
+  /* background-color: hsl(120, 100%, 25%); */
+  /* background-color: hsl(120, 100%, 75%); */
+}
+.hsl_blue {
+  height: 100px;
+  width: 100px;
+  background-color: hsl(240, 100%, 50%);
+  /* background-color: hsla(240, 100%, 50%, 0.3); */
+}
+
+.predefined_green {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+.predefined_blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.reuse_blue {
+  height: 100px;
+  width: 100px;
+  color: blue;
+  border: 1px solid blue;
+}
+
+/* all the options */
+input[type="checkbox"] {
+  accent-color: red;
+}
+
+.all_the_options {
+  /* sets background color */
+  background-color: aquamarine; 
+  /* sets text color */
+  color: rgb(0, 255, 0); 
+  /* sets color of of an element's four borders */
+  border-color: black; 
+  /* sets color of shadow */
+  box-shadow: grey; 
+  /* specifies the color of the cursor (caret) in inputs, textareas, or any element that is editable */
+  caret-color: red; 
+   /* specifies the color of the rule between columns */
+  column-rule-color: pink;
+  /* sets color of an outline */
+  outline-color: rgb(0, 255, 0); 
+  /* sets color of the text-decoration (underlines, overlines, linethroughs) */
+  text-decoration-color: hsl(140, 77%, 30%); 
+  /* sets color of shadow for text */
+  text-shadow: rgb(0, 255, 0); 
+  /* sets text color */
+  text-emphasis-color: rgb(120, 99, 40); 
+}
