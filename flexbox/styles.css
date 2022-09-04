@@ -1,0 +1,92 @@
+/* row centered in page */
+/* .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* row reversed centered in page */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* row centered bottom of page */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+} */
+
+/* column centered right page */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+} */
+
+/* row left reversed and other justify content page */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+} */
+
+/* wrapped row page -- use additional green blocks */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* wrapped row page with align-content -- use additional green blocks */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+} */
+
+/* column right side, reversed and centered */
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+} */
+
+.red {
+  /* order: 1;*/
+  height: 100px;
+  width: 100px;
+  background-color: #ff0000;
+  margin: 5px;
+}
+.blue {
+  height: 100px;
+  width: 100px;
+  background-color: #0000ff;
+  margin: 5px;
+}
+.green {
+  height: 100px;
+  width: 100px;
+  background-color: #44ba46;
+  margin: 5px;
+  /* order: 1;
+  align-self: flex-end; */
+}
+/* .container {
+  height: 100%;
+  display: flex;
+} */
