@@ -1,0 +1,103 @@
+/* universal selector */
+/* mostly used for CSS resets */
+/* * {
+  background-color: #b9c848;
+} */
+
+/* -- Basic Selectors -- */
+/* By element */
+/* div {
+  height: 100px;
+  width: 100px;
+  background-color: #65e5ce;
+} 
+input {
+  background-color: #65e5ce;
+} */
+
+/* By class */
+/* .container {
+  height: 100px;
+  width: 100px;
+  background-color: #ff0000;
+} */
+
+/* By id */
+/* #name {
+  background-color: goldenrod;
+} */
+
+/* By attribute */
+/* [required] {
+  background-color: red;
+} */
+
+/* -- Grouping Selectors -- */
+/* selects all the matching nodes */
+/* #name, p {
+  background-color: coral;
+} */
+/* Selects all elements with both container and container */
+/* .container .check {
+  background-color: khaki;
+} */
+/* Selects all elements with container that is 
+a descendant of an element with container */
+/* .container.container {
+  background-color: salmon;
+} */
+
+/* -- Combinators -- */
+/* ## Descendant ## */
+/* selects nodes that are descendants of the 
+first element */
+/* .last_container p,
+.another_container p {
+  background-color: darkcyan;
+} */
+/* :is(.last_container, .another_container) p {
+  background-color: darkcyan;
+} */
+
+/* ## Child ## */
+/* selects nodes that are direct children of 
+the first element */
+/* .another_container > p {
+  background-color: royalblue;
+} */
+
+/* ## General sibling ## */
+/*  selects siblings, second element that 
+follows the first */
+/* span ~ span {
+  background-color: brown;
+} */
+
+/* ## Adjacent sibling ## */
+/* matches the second element only if it 
+immediately follows the first element */
+/* div + div {
+  background-color: rosybrown;
+} */
+
+/* ## Column ## */
+/* on a trial basis and is not supported 
+by browsers yet. */
+
+/* -- Pseudo classes and elements -- */
+/* A pseudo-class is used to define a special 
+state of an element. e.g. hover, visited, focus */
+/* p::first-letter {
+  background-color: darkorchid;
+} */
+/* p:nth-child(2) {
+  background-color: rebeccapurple;
+} */
+/* p:nth-last-child(1) {
+  background-color: red;
+} */
+/* p::after {
+  content: url("https://parade.com/.image/t_share/MTkwNTgxMTA1NjcwODkwNjIx/funny-pictures.jpg");
+} */
+
+/* https://www.w3schools.com/cssref/css_selectors.asp */
