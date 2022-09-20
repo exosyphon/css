@@ -37,13 +37,13 @@ input {
 /* #name, p {
   background-color: coral;
 } */
-/* Selects all elements with both container and container */
+/* Selects all elements with check that is 
+a descendant of an element with container */
 /* .container .check {
   background-color: khaki;
 } */
-/* Selects all elements with container that is 
-a descendant of an element with container */
-/* .container.container {
+/* Selects all elements with both inside and check */
+/* .inside.check {
   background-color: salmon;
 } */
 
