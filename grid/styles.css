@@ -19,11 +19,11 @@ html, body {
 /* repeat(4, calc(100% / 4) */
 /* Using fr - fraction of available space in container */
 /* You can mix units (e.g. px and %) */
-/* .container {
+.container {
   display: grid;
   grid-template-rows: 100px;
   grid-template-columns: repeat(4, 100px);
-} */
+}
 /* .container {  
   display: grid;
   grid: 100px / repeat(4, 100px);
@@ -110,14 +110,46 @@ html, body {
 
 
 
+/* Individual items */
 
+/* set grid for individual element */
+/* grid-column-start: <number> | <name> | span <number> 
+                      | span <name> | auto; */
+/* .item1 {
+  grid-row-start: third-line;
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  grid-row-end: 4;
+} */
+/* set grid for individual element shorthand */
+/* .item1 {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
+} */
 
+/* setting start and end for item with names */
+/* .container {
+  display: grid;
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] 100px [last-line];
+  grid-template-columns: [first] 40px [line2] 50px [line3] 100px [col4-start] 50px [five] 40px [end];
+} */
+/* .item2 {
+  grid-row-start: row1-end;  
+  grid-column-start: col4-start;  
+  grid-row-end: 2;
+  grid-column-end: 2;  
+} */
+/* shorthand for setting individual grid item */
+/* .item2 {
+  grid-area: row1-end / col4-start / 2 / 2;
+} */
 
-
-
-
-
-
-
-
+/* move individual item within grid item */
+/* .item1 {
+  justify-self: center;
+  align-self: center;
+} */
+/* .item1 {
+  place-self: center;
+} */
 
